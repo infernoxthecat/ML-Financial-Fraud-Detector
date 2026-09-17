@@ -114,3 +114,11 @@ Initialised the project and imported the dataset into a Jupyter Notebook.
     1    0.001291
     Name: proportion, dtype: float64
 </details>
+
+### 17/09/2026
+
+Performed exploratory data analysis on the dataset.
+- All recorded fraud occurs in CASH_OUT and TRANSFER. While highly unlikely in a real-world dataset, type can be used as a strong predictor of fraud in this synthetic dataset.
+- While both transaction types have a roughly equal number of fraud occurences, there are only ~530k TRANSFERs as compared to 2.2mil CASH_OUTs. hence, the fraud rate of TRANSFER is ~4.2 times that of CASH_OUT.
+- Compiled the statistics for the amounts of money involved in both fraudulent and non-fraudulent transactions
+- Compiled the statistics for the balance differences in original and destination accounts involved in both fraudulent and non-fraudulent transactions
