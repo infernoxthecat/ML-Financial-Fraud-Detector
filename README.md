@@ -122,3 +122,6 @@ Performed exploratory data analysis on the dataset.
 - While both transaction types have a roughly equal number of fraud occurences, there are only ~530k TRANSFERs as compared to 2.2mil CASH_OUTs. hence, the fraud rate of TRANSFER is ~4.2 times that of CASH_OUT.
 - Compiled the statistics for the amounts of money involved in both fraudulent and non-fraudulent transactions
 - Compiled the statistics for the balance differences in original and destination accounts involved in both fraudulent and non-fraudulent transactions
+
+Leakage checking
+- The existing isFlaggedFraud metric in the dataset has a 100% precision but a ~0.2% recall rate. As such, it can be used as a baseline for the ML model, as well as a tool alongside the model to improve performance, without introducing data leakage risks.
